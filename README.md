@@ -4,31 +4,47 @@ In the competitive landscape of e-commerce, understanding customer behavior is c
 
 ## Project Overview
 
-- Objective: The objective of this project is to segment customers based on their purchasing behavior, preferences, and demographic information. The segmentation will help the company understand different customer groups and develop strategies to increase customer engagement and revenue.
+The objective of this project is to segment customers based on their purchasing behavior, preferences, and demographic information. The segmentation will help the company understand different customer groups and develop strategies to increase customer engagement and revenue.
 
 Key Questions/Requirements:
 
-How can we classify customers based on their buying behavior? 
+- How can we classify customers based on their buying behavior? 
 
-What are the main demographic and transactional characteristics of each customer segment?
+- What are the main demographic and transactional characteristics of each customer segment?
 
-What is the average purchase amount, and how does it vary across segments?
+- What is the average purchase amount, and how does it vary across segments?
 
-Which payment methods and product categories are preferred by different customer groups?
+- Which payment methods and product categories are preferred by different customer groups?
 
 ## Data Source
 
-The data for this project was obtained from **Kaggle.com**, which provides various fictitious datasets for data analysis projects. The dataset contains records of customer transactions in an e-commerce store, including details such as Customer ID, Purchase Date, Product Category, Product Price, Units Sold, Total Purchase Amount, Payment Method, Customer Age, Gender, Returns, and Age Group.
+The data for this project was obtained from **Kaggle.com**, which provides various fictitious datasets for data analysis projects. The dataset contains records of customer transactions in an e-commerce store, including details such as **Customer ID, Purchase Date, Product Category, Product Price, Units Sold, Total Purchase Amount, Payment Method, Customer Age, Gender, Returns,** and **Age Group**.
 
 ## Data Cleaning
 
-The data underwent several steps of cleaning to prepare it for analysis. This included:
+In preparing the dataset for analysis, I followed a structured data cleaning process to ensure **data quality** and **accuracy**. Here are the key steps I took:
 
-Removing Duplicates: Any duplicate entries were identified and removed to ensure data integrity.
+**1. Check for Missing Values:**
 
-Handling Missing Values: Missing values were either filled (if appropriate) or excluded from analysis to maintain accuracy.
+- I carefully went through each column, applying filters to easily spot any missing values.
 
-Standardizing Data Formats: Fields such as dates and numerical values were standardized for consistency.
+- For columns like **Returns**, where blanks might represent non-returned items, I decided to replace any **blank cells** with a **0**.
+
+- To do this, I selected the Returns column, pressed ``Ctrl + H`` to open the Replace dialog, left the **Find what** field **"empty"**, and entered **"0"** in the **Replace with** field. I then clicked **Replace All** to quickly fill in the blanks.
+
+**2. Convert Data Types:**
+
+- I wanted to ensure that the **Purchase Date** column was in the correct **date format** for accurate date-based analysis.
+
+- To standardize the date format, I selected the Purchase Date column, navigated to **Home > Number Format**, and chose **"Short Date"** to apply a consistent date format.
+
+**3. Remove Duplicates:**
+
+- To maintain the integrity of the data, I checked for any duplicate entries that could skew the analysis.
+
+- I selected the entire dataset, went to **Data > Remove Duplicates**, and made sure all columns were selected. This step helped me eliminate any redundant records, ensuring that each customer transaction was **unique**.
+
+By performing these steps, I was able to ensure that the data was **clean, accurate,** and **ready for meaningful analysis**.
 
 ## Data Preparation
 
