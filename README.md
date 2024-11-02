@@ -2,6 +2,12 @@
 
 In the competitive landscape of e-commerce, understanding customer behavior is crucial for driving growth, increasing sales, and enhancing customer retention. This project, "Customer Segmentation Analysis," uses customer transaction data to segment customers, identify purchasing patterns, and derive actionable insights that will help the business develop targeted marketing strategies and improve decision-making processes.
 
+<br>
+
+## Table of Content
+
+<br>
+
 ## Project Overview
 
 The objective of this project is to segment customers based on their purchasing behavior, preferences, and demographic information. The segmentation will help the company understand different customer groups and develop strategies to increase customer engagement and revenue.
@@ -16,9 +22,13 @@ Key Questions/Requirements:
 
 - Which payment methods and product categories are preferred by different customer groups?
 
+<br>
+
 ## Data Source
 
 The data for this project was obtained from **Kaggle.com**, which provides various fictitious datasets for data analysis projects. The dataset contains records of customer transactions in an e-commerce store, including details such as **Customer ID, Purchase Date, Product Category, Product Price, Units Sold, Total Purchase Amount, Payment Method, Customer Age, Gender, Returns,** and **Age Group**.
+
+<br>
 
 ## Data Cleaning
 
@@ -46,13 +56,17 @@ In preparing the dataset for analysis, I followed a structured data cleaning pro
 
 By performing these steps, I was able to ensure that the data was **clean, accurate,** and **ready for meaningful analysis**.
 
-## Data Preparation
+<br>
+
+## RFM Analysis
 
 After completing data cleaning, I proceeded with an RFM analysis (Recency, Frequency, and Monetary value), a method that helps identify the most valuable customers by evaluating their purchasing behaviors. This analysis offers a practical approach to segmentation, focusing on how customers shop rather than their demographic characteristics. Here is how each component is defined:
 
 - **Recency**: Measures how recently a customer made a purchase. Calculated as the number of days since the customer’s last purchase.
 - **Frequency**: Indicates how often a customer makes purchases. Counted as the total number of purchases per customer.
 - **Monetary**: Represents the total amount a customer spends. Summed as the total purchase value for each customer.
+
+<br>
 
 ### Step 1: Creating Recency, Frequency, and Monetary Columns
 
@@ -77,6 +91,8 @@ To build the RFM model, I first created the respective columns by setting up a P
    - In cell E2, I entered the formula `=TODAY() - B2` to calculate the days since the last purchase.
    - Dragged the formula down to populate the Recency column for all rows.
 
+<br>
+
 ### Step 2: Calculating Percentile Ranks for RFM Segmentation
 
 To standardize the RFM metrics, I created percentile rank columns using the `PERCENTRANK.EXC` function:
@@ -93,6 +109,8 @@ To standardize the RFM metrics, I created percentile rank columns using the `PER
    - Created a column titled “Monetary Rank” in cell H1.
    - Entered the formula `=PERCENTRANK.EXC($D$2:$D$49662, D2, 1)*10` in cell H2 and filled it down.
 
+<br>
+
 ### Step 3: Calculating the Combined RFM Score
 
 To summarize the RFM data:
@@ -100,6 +118,8 @@ To summarize the RFM data:
 1. **Create an RFM Score column**:
    - Titled cell I1 as “RFM Score.”
    - Used the formula `=F2 + G2 + H2` in cell I2 to combine the ranks and filled it down for all entries.
+
+<br>
 
 ### Step 4: Segmenting Customers Based on RFM Score
 
@@ -117,9 +137,15 @@ This process allowed me to generate key columns: Recency, Frequency, Monetary, t
 - **RFM Score**: Combined scores reveal overall customer value.
 - **Segment**: Categorizes customers into actionable groups, such as “Top” or “At-Risk.”
 
-These steps laid the foundation for further analysis using visualization charts to uncover trends and actionable insights.
+<br>
 
-## Analysis
+After adding the necessary columns for the RFM analysis, I proceeded to analyze the data using several visualization charts: a column chart illustrating the number of customers per segment, a pie chart representing the total purchase distribution by segment, and a line chart displaying the average RFM scores across segments. These charts collectively offer a clear view of customer patterns and their contributions to the business, aiding in strategic decision-making. These visualizations are detailed below.
+
+<br> 
+
+#### Customer Count by Segment
+
+
 
 ### Exploratory Data Analysis (EDA)
 
