@@ -139,7 +139,7 @@ This process allowed me to generate key columns: Recency, Frequency, Monetary, t
 
 <br>
 
-After adding the necessary columns for the RFM analysis, I proceeded to analyze the data using several **visualization charts**: a column chart illustrating the number of customers per segment, a pie chart representing the total purchase distribution by segment, and a line chart displaying the average RFM scores across segments. These charts collectively offer a clear view of **customer patterns** and their contributions to the business, aiding in **strategic decision-making**. These visualizations are detailed below.
+After adding the necessary columns for the RFM analysis, I proceeded to analyze the data using several **visualization charts**: a column chart illustrating the number of customers per segment, a pie chart representing the total purchase distribution by segment, and a line chart displaying the average RFM scores across segments. These charts collectively offer a clear view of **customer patterns** and their contributions to the business, aiding in **strategic decision-making**. These visualizations are detailed below:
 
 <br> 
 
@@ -163,7 +163,7 @@ The line chart illustrates the average recency, frequency, and monetary scores f
 
 ## Customer Behavior Analysis
 
-The "Customer Behavior Analysis" section provides insights into purchasing trends and preferences among different customer demographics and behaviors. This analysis includes detailed visualizations that reveal spending habits by age and gender, product preferences, revenue contributions by category, and payment method choices. The charts collectively **help illustrate key behavioral patterns**, offering a comprehensive **understanding of customer interactions** and **purchasing dynamics**.
+The "Customer Behavior Analysis" section provides insights into purchasing trends and preferences among different customer demographics and behaviors. This analysis includes detailed visualizations that reveal spending habits by age and gender, product preferences, revenue contributions by category, and payment method choices. The charts collectively **help illustrate key behavioral patterns**, offering a comprehensive **understanding of customer interactions** and **purchasing dynamics**. These visualizations are detailed below:
 
 <br>
 
