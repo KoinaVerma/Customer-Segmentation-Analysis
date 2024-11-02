@@ -139,13 +139,59 @@ This process allowed me to generate key columns: Recency, Frequency, Monetary, t
 
 <br>
 
-After adding the necessary columns for the RFM analysis, I proceeded to analyze the data using several visualization charts: a column chart illustrating the number of customers per segment, a pie chart representing the total purchase distribution by segment, and a line chart displaying the average RFM scores across segments. These charts collectively offer a clear view of customer patterns and their contributions to the business, aiding in strategic decision-making. These visualizations are detailed below.
+After adding the necessary columns for the RFM analysis, I proceeded to analyze the data using several **visualization charts**: a column chart illustrating the number of customers per segment, a pie chart representing the total purchase distribution by segment, and a line chart displaying the average RFM scores across segments. These charts collectively offer a clear view of **customer patterns** and their contributions to the business, aiding in **strategic decision-making**. These visualizations are detailed below.
 
 <br> 
 
-#### Customer Count by Segment
+#### 1. Customer Count by Segment(Column chart)
 
+The column chart displays the distribution of customers across different segments. It highlights that the **'High'** segment has the **largest** customer base, followed by the **'Medium'** and **'Low'** segments, while the **'Bottom'** and **'Top'** segments have the **fewest** customers. This distribution provides insight into the concentration of customers in each category.
 
+<br>
+
+#### 2. Total Purchase Amount Distribution by Segment(Pie chart)
+
+The pie chart illustrates the share of total purchases made by customers in each segment. The **'High'** and **'Medium'** segments contribute the **largest portions**, indicating they are responsible for the majority of revenue. The **'Low', 'Top'**, and **'Bottom'** segments contribute **smaller shares**, reflecting less significant purchase amounts from these groups.
+
+<br>
+
+#### 3. Average RFM Scores by Segment(Line chart)
+
+The line chart illustrates the average recency, frequency, and monetary scores for each customer segment. The **'High'** and **'Top'** segments show the **highest scores** across all three dimensions, indicating strong purchasing behavior. The **'Bottom'** segment has the **lowest scores**, reflecting minimal engagement, while the **'Medium'** segment shows balanced but **moderate scores**. The **'Low'** segment has a **noticeable dip**, particularly in **frequency**, indicating **less frequent purchases.**
+
+<br>
+
+## Customer Behavior Analysis
+
+<br>
+
+#### 1. Purchasing Behavior by Age Group:
+
+The bar chart shows that **Seniors** are the **highest spenders**, followed closely by Adults. **Young Adults** have the **lowest total purchase amount**.
+ 
+#### 2. Purchasing Behavior by Gender:
+
+The pie chart shows that purchasing behavior by gender is nearly **equal**, with Males slightly leading in total purchase amount compared to Females.
+
+#### 3. Product Preferences by Gender:
+
+The stacked bar chart shows that both males and females have very **similar product preferences** across categories. The **total purchase amounts are nearly identical** for each gender in categories like Books, Clothing, Electronics, and Home products.
+
+#### 4. Revenue Contribution by Category:
+
+The bar chart shows that **Home products** contribute the **most** to revenue, followed closely by Electronics and Clothing. **Books** contribute the **least**, but still represent a significant portion of the total revenue.
+
+#### 5. Payment Method Preferences:
+
+The pie chart shows that **Credit Card** is the **most preferred** payment method, accounting for the largest share of total purchase amounts, closely followed by PayPal. **Cash** is the **least preferred** method among customers.
+
+#### 6. Spending Patterns by Payment Method:
+
+The stacked bar chart illustrates spending patterns across different product categories (Books, Clothing, Electronics, Home) based on the payment method used (Cash, Credit Card, PayPal).
+
+The distribution of spending across product categories is consistent regardless of the payment method. Each payment method shows **similar patterns**, with **Home** and **Electronics** being the **dominant categories**, followed by Clothing and Books.
+
+<br>
 
 ### Exploratory Data Analysis (EDA)
 
