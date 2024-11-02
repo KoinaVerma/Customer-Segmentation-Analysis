@@ -1,6 +1,6 @@
 # Customer Segmentation Analysis
 
-In the competitive landscape of e-commerce, understanding customer behavior is crucial for driving growth, increasing sales, and enhancing customer retention. This project, "Customer Segmentation Analysis," uses customer transaction data to segment customers, identify purchasing patterns, and derive actionable insights that will help the business develop targeted marketing strategies and improve decision-making processes.
+In the competitive landscape of e-commerce, understanding customer behavior is crucial for driving growth, increasing sales, and enhancing customer retention. This project, "Customer Segmentation Analysis," uses customer transaction data to segment customers, identify purchasing patterns, and derive actionable insights using **Excel** that will help the business **develop targeted marketing strategies**and **improve decision-making processes**.
 
 <br>
 
@@ -26,7 +26,7 @@ Key Questions/Requirements:
 
 ## Data Source
 
-The data for this project was obtained from **Kaggle.com**, which provides various fictitious datasets for data analysis projects. The dataset contains records of customer transactions in an e-commerce store, including details such as **Customer ID, Purchase Date, Product Category, Product Price, Units Sold, Total Purchase Amount, Payment Method, Customer Age, Gender, Returns,** and **Age Group**.
+The data for this project was obtained from **Kaggle.com**, which provides various fictitious datasets for data analysis projects. The dataset contains records of **customer transactions in an e-commerce store**, including details such as Customer ID, Purchase Date, Product Category, Product Price, Units Sold, Total Purchase Amount, Payment Method, Customer Age, Gender, Returns, and Age Group.
 
 <br>
 
@@ -162,6 +162,8 @@ The line chart illustrates the average recency, frequency, and monetary scores f
 <br>
 
 ## Customer Behavior Analysis
+
+The "Customer Behavior Analysis" section provides insights into purchasing trends and preferences among different customer demographics and behaviors. This analysis includes detailed visualizations that reveal spending habits by age and gender, product preferences, revenue contributions by category, and payment method choices. The charts collectively **help illustrate key behavioral patterns**, offering a comprehensive **understanding of customer interactions** and **purchasing dynamics**.
 
 <br>
 
