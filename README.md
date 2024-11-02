@@ -48,25 +48,76 @@ By performing these steps, I was able to ensure that the data was **clean, accur
 
 ## Data Preparation
 
-Several columns were added to enhance the dataset for segmentation analysis and to facilitate additional insights. Below are the calculated columns and their respective formulas:
+After completing data cleaning, I proceeded with an RFM analysis (Recency, Frequency, and Monetary value), a method that helps identify the most valuable customers by evaluating their purchasing behaviors. This analysis offers a practical approach to segmentation, focusing on how customers shop rather than their demographic characteristics. Here is how each component is defined:
 
-- Recency: Represents the number of days since the last purchase by each customer.
+- **Recency**: Measures how recently a customer made a purchase. Calculated as the number of days since the customer’s last purchase.
+- **Frequency**: Indicates how often a customer makes purchases. Counted as the total number of purchases per customer.
+- **Monetary**: Represents the total amount a customer spends. Summed as the total purchase value for each customer.
 
-``Formula: =TODAY() - [Last Purchase Date]``
+### Step 1: Creating Recency, Frequency, and Monetary Columns
 
-- Frequency: Counts the total number of transactions per customer.
+To build the RFM model, I first created the respective columns by setting up a Pivot Table:
 
-``Formula: =COUNTIF([Customer ID Range], [Customer ID])``
+1. **Pivot Table Creation**:
+   - Selected the dataset and went to `Insert > PivotTable` to create a new pivot table in a separate worksheet.
+2. **Configure the Pivot Table**:
+   - Dragged `Customer ID` to the Rows area.
+   - For **Recency**:
+     - Added `Purchase Date` to the Values area and set its aggregation to `Max` to identify the most recent purchase date.
+     - Renamed the field as “Last Purchase Date.”
+   - For **Frequency**:
+     - Added `Customer ID` again to the Values area and changed the aggregation to `Count` to show purchase frequency.
+     - Renamed this field as “Frequency.”
+   - For **Monetary**:
+     - Added `Total Purchase Amount` to the Values area and set the aggregation to `Sum` to calculate the total spend.
+     - Renamed the field as “Monetary.”
 
-- Monetary: Calculates the total purchase amount for each customer.
+3. **Calculating Recency**:
+   - Created a new column adjacent to the pivot table named “Recency.”
+   - In cell E2, I entered the formula `=TODAY() - B2` to calculate the days since the last purchase.
+   - Dragged the formula down to populate the Recency column for all rows.
 
-``Formula: =SUMIF([Customer ID Range], [Customer ID], [Total Purchase Amount])``
+### Step 2: Calculating Percentile Ranks for RFM Segmentation
 
-- RFM Score: Combines Recency, Frequency, and Monetary ranks to create an overall RFM score for each customer.
+To standardize the RFM metrics, I created percentile rank columns using the `PERCENTRANK.EXC` function:
 
-``Formula: =RANK([Recency Rank]) + RANK([Frequency Rank]) + RANK([Monetary Rank])``
+1. **Recency Rank**:
+   - Created a column titled “Recency Rank” in cell F1.
+   - Applied the formula `=PERCENTRANK.EXC($E$2:$E$49662, E2, 1)*10` in cell F2 and filled it down the column.
 
-- Segment: Segments customers based on RFM score into categories such as High, Medium, Low, etc.
+2. **Frequency Rank**:
+   - Created a column titled “Frequency Rank” in cell G1.
+   - Used the formula `=PERCENTRANK.EXC($C$2:$C$49662, C2, 1)*10` in cell G2 and filled it down.
+
+3. **Monetary Rank**:
+   - Created a column titled “Monetary Rank” in cell H1.
+   - Entered the formula `=PERCENTRANK.EXC($D$2:$D$49662, D2, 1)*10` in cell H2 and filled it down.
+
+### Step 3: Calculating the Combined RFM Score
+
+To summarize the RFM data:
+
+1. **Create an RFM Score column**:
+   - Titled cell I1 as “RFM Score.”
+   - Used the formula `=F2 + G2 + H2` in cell I2 to combine the ranks and filled it down for all entries.
+
+### Step 4: Segmenting Customers Based on RFM Score
+
+To classify customers into segments:
+
+1. **Create a Segment column**:
+   - Named cell J1 as “Segment.”
+   - Entered the formula `=IF(I2 >= 24, "Top", IF(I2 >= 18, "High", IF(I2 >= 12, "Medium", IF(I2 >= 6, "Low", "Bottom"))))` in cell J2 and applied it to the rest of the rows.
+
+This process allowed me to generate key columns: Recency, Frequency, Monetary, their respective ranks, the combined RFM Score, and customer segments. Each value provides insights:
+
+- **Recency**: Lower values indicate more recent activity.
+- **Frequency**: Higher counts show more frequent purchases.
+- **Monetary**: Higher totals represent greater customer spending.
+- **RFM Score**: Combined scores reveal overall customer value.
+- **Segment**: Categorizes customers into actionable groups, such as “Top” or “At-Risk.”
+
+These steps laid the foundation for further analysis using visualization charts to uncover trends and actionable insights.
 
 ## Analysis
 
