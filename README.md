@@ -202,6 +202,12 @@ The stacked bar chart illustrates spending patterns across different product cat
 The distribution of spending across product categories is consistent regardless of the payment method. Each payment method shows **similar patterns**, with **Home** and **Electronics** being the **dominant categories**, followed by Clothing and Books.
 
 <br>
+<br>
+
+<img width="551" alt="EXCEL DASHBOARD" src="https://github.com/user-attachments/assets/1aa061a4-5d65-4610-b7d9-ab01dae1a831">
+
+<br>
+<br>
 
 ## Recommendations
 
