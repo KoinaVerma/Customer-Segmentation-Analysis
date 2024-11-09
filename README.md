@@ -1,10 +1,10 @@
-# Customer Segmentation Analysis
+# CUSTOMER SEGMENTATION ANALYSIS
 
-In the competitive landscape of e-commerce, understanding customer behavior is crucial for driving growth, increasing sales, and enhancing customer retention. This project, "Customer Segmentation Analysis," uses customer transaction data to segment customers, identify purchasing patterns, and derive actionable insights using **Excel** that will help the business **develop targeted marketing strategies**and **improve decision-making processes**.
+In the competitive landscape of **e-commerce**, understanding customer behavior is crucial for driving growth, increasing sales, and enhancing customer retention. This project, "Customer Segmentation Analysis," uses **customer transaction data** to segment customers, identify purchasing patterns, and derive actionable insights using **Excel** that will help the business **develop targeted marketing strategies**and **improve decision-making processes**.
 
 <br>
 
-## Table of Content
+## TABLE OF CONTENT
 
 - [Project Overview](#project_overview)
 - [Data Source](#data_source)
@@ -16,29 +16,33 @@ In the competitive landscape of e-commerce, understanding customer behavior is c
   
 <br>
 
-## Project Overview
+## PROJECT OVERVIEW
 
-The objective of this project is to segment customers based on their purchasing behavior, preferences, and demographic information. The segmentation will help the company understand different customer groups and develop strategies to increase customer engagement and revenue.
+The objective of this project is to **segment customers** based on their **purchasing behavior**, **preferences**, and **demographic information**. The segmentation will help the company understand different customer groups and develop strategies to increase customer engagement and revenue.
 
 Key Questions/Requirements:
 
-- How can we classify customers based on their buying behavior? 
+- How can we classify customers based on their **purchasing behavior**? 
 
-- What are the main demographic and transactional characteristics of each customer segment?
+- What are the main **demographic** and **transactional characteristics** of each customer segment?
 
-- What is the average purchase amount, and how does it vary across segments?
+- What is the **average purchase amount**, and how does it vary across segments?
 
-- Which payment methods and product categories are preferred by different customer groups?
+- Which **payment methods** and **product categories** are preferred by different customer groups?
 
 <br>
 
-## Data Source
+## DATA SOURCE
 
 The data for this project was obtained from **Kaggle.com**, which provides various fictitious datasets for data analysis projects. The dataset contains records of **customer transactions in an e-commerce store**, including details such as Customer ID, Purchase Date, Product Category, Product Price, Units Sold, Total Purchase Amount, Payment Method, Customer Age, Gender, Returns, and Age Group.
 
 <br>
 
-## Data Cleaning
+<img width="608" alt="EXCEL DATASET" src="https://github.com/user-attachments/assets/2cf0b3cc-4935-49dd-ad94-0822a417cf17">
+
+<br>
+
+## DATA CLEANING
 
 In preparing the dataset for analysis, I followed a structured data cleaning process to ensure **data quality** and **accuracy**. Here are the key steps I took:
 
@@ -66,7 +70,7 @@ By performing these steps, I was able to ensure that the data was **clean, accur
 
 <br>
 
-## RFM Analysis
+## RFM ANALYSIS
 
 After completing data cleaning, I proceeded with an RFM analysis (Recency, Frequency, and Monetary value), a method that helps identify the most valuable customers by evaluating their purchasing behaviors. This analysis offers a practical approach to segmentation, focusing on how customers shop rather than their demographic characteristics. Here is how each component is defined:
 
@@ -146,10 +150,20 @@ This process allowed me to generate key columns: Recency, Frequency, Monetary, t
 - **Segment**: Categorizes customers into actionable groups, such as “Top” or “At-Risk.”
 
 <br>
+<br>
 
-After adding the necessary columns for the RFM analysis, I proceeded to analyze the data using several **visualization charts**: a column chart illustrating the number of customers per segment, a pie chart representing the total purchase distribution by segment, and a line chart displaying the average RFM scores across segments. These charts collectively offer a clear view of **customer patterns** and their contributions to the business, aiding in **strategic decision-making**. These visualizations are detailed below:
+<img width="548" alt="RFM 1" src="https://github.com/user-attachments/assets/b7da3180-5627-4d80-ba4b-f8ad1f0ac42c">
 
-<br> 
+<br>
+<br>
+<br>
+
+<img width="654" alt="RFM 2" src="https://github.com/user-attachments/assets/ee029c5e-bc01-4e21-a6d4-95b8ac021d38">
+
+<br>
+<br>
+
+After adding the necessary columns for the RFM analysis, I proceeded to analyze the data using several **visualization charts**: a column chart illustrating the number of customers per segment, a pie chart representing the total purchase distribution by segment, and a line chart displaying the average RFM scores across segments. These charts collectively offer a clear view of **customer patterns** and their contributions to the business, aiding in **strategic decision-making**. These visualizations are detailed below: 
 
 #### 1. Customer Count by Segment(Column chart)
 
@@ -169,7 +183,7 @@ The line chart illustrates the average recency, frequency, and monetary scores f
 
 <br>
 
-## Customer Behavior Analysis
+## CUSTOMER BEHAVIOR ANALYSIS
 
 The "Customer Behavior Analysis" section provides insights into purchasing trends and preferences among different customer demographics and behaviors. This analysis includes detailed visualizations that reveal spending habits by age and gender, product preferences, revenue contributions by category, and payment method choices. The charts collectively **help illustrate key behavioral patterns**, offering a comprehensive **understanding of customer interactions** and **purchasing dynamics**. These visualizations are detailed below:
 
@@ -209,7 +223,7 @@ The distribution of spending across product categories is consistent regardless 
 <br>
 <br>
 
-## Recommendations
+## RECOMMENDATIONS
 
 Based on the comprehensive analysis of customer behavior and segmentation, the following actionable recommendations are proposed:
 
@@ -227,7 +241,7 @@ Based on the comprehensive analysis of customer behavior and segmentation, the f
 
 <br>
 
-## Conclusion
+## CONCLUSION
 
 This Customer Segmentation Analysis has provided a **clear understanding of purchasing behavior** and **customer preferences** in an e-commerce setting. Through 'RFM analysis', customers were effectively segmented into actionable groups, revealing that 'High' and 'Medium' segments are the most valuable, while 'Bottom' and 'Low' segments present opportunities for growth through targeted re-engagement strategies. The 'Customer Behavior Analysis' further highlighted key insights, such as **age group spending trends**, **gender purchasing behavior**, and **product category performance**.
 
